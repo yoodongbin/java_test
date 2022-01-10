@@ -7,7 +7,7 @@ public class Profile {
 	public void setAge(int val) {
 		age = val;
 	}
-
+	//메소드
 	public void setName(String str) {
 		name = str;
 	}

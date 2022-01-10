@@ -4,23 +4,26 @@ public class SalaryManager {
 
     public double getMonthlySalary(int yearlySalary) {
         double monthlySalary = yearlySalary/12.0;
-        monthlySalary -= calculateTax(monthlySalary);
+        monthlySalary -= (calculateTax(monthlySalary)+calculateNationalPension(monthlySalary)+calculateHealthInsurance(monthlySalary));
         return monthlySalary;
     }
 
     public double calculateTax(double monthlySalary) {
-        double rmsfh = monthlySalary*0.125;
-        double rnrals = monthlySalary*0.081;
-        double rjsrkd = monthlySalary*0.135;
-        return rmsfh+rnrals+rjsrkd;
+        double calculateTax = monthlySalary*0.125;
+        return calculateTax;
     }
 
     public double calculateNationalPension(double monthlySalary) {
-        double rmsfh = monthlySalary*0.125;
-        double rnrals = monthlySalary*0.081;
-        double rjsrkd = monthlySalary*0.135;
-        return rmsfh+rnrals+rjsrkd;
+        double nationalPension = monthlySalary*0.081;
+        return nationalPension;
     }
+
+    public double calculateHealthInsurance(double monthlySalary) {
+        double healthInsurance = monthlySalary*0.135;
+        return healthInsurance;
+    }
+
+
 
     public static void main(String[] args) {
         SalaryManager sm = new SalaryManager();
