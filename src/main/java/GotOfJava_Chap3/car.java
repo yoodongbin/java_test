@@ -16,11 +16,5 @@ public class car {
 		public int getCurrentSpeed() {
 			return speed;
 		}
-		
-		public static void main(String[] args) {
-			car car = new car();
-			car.speedUp();
-			car.speedDown();
-			System.out.println(car.getCurrentSpeed());
-		}
+
 }
