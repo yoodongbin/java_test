@@ -1,7 +1,7 @@
-package add;
+package GotOfJava_Chap5;
 
 public class SalaryManager {
-
+    //1월9일
     public double getMonthlySalary(int yearlySalary) {
         double monthlySalary = yearlySalary/12.0;
         monthlySalary -= (calculateTax(monthlySalary)+calculateNationalPension(monthlySalary)+calculateHealthInsurance(monthlySalary));

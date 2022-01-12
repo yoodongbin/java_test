@@ -1,8 +1,9 @@
-package add;
+package GotOfJava_Chap2;
 
 public class Profile {
-	String name;
+	//전역변수
 	int age;
+	String name;
 
 	public void setAge(int val) {
 		age = val;
@@ -20,6 +21,7 @@ public class Profile {
 		System.out.println("My age is "+age);
 	}
 
+	//main method
 	public static void main(String[] args) {
 		Profile profile = new Profile();
 		profile.setAge(20);

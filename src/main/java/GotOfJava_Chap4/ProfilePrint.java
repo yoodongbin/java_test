@@ -1,5 +1,5 @@
-package add;
-
+package GotOfJava_Chap4;
+//1월9일
 public class ProfilePrint {
     byte age;
     String name;

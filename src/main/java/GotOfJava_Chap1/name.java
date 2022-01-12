@@ -1,4 +1,4 @@
-package add;
+package GotOfJava_Chap1;
 
 import java.util.Arrays;
 import java.util.Comparator;
