@@ -1,4 +1,4 @@
-package GotOfJava_Chap6;
+package chap6;
 
 public class InterestManager {
     //1월10일

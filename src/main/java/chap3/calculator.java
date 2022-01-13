@@ -1,4 +1,4 @@
-package GotOfJava_Chap3;
+package chap3;
 
 
 //class

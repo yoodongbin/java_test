@@ -1,4 +1,4 @@
-package GotOfJava_Chap5;
+package chap5;
 
 public class Main {
     public static void main(String[] args) {

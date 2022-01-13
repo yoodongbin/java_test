@@ -1,4 +1,4 @@
-package GotOfJava_Chap2;
+package chap2;
 
 public class Main {
 

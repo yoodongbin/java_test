@@ -1,4 +1,4 @@
-package GotOfJava_Chap7;
+package chap7;
 
 public class ManageHeight {
     int[][] gradeHeights;

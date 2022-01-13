@@ -1,4 +1,4 @@
-package GotOfJava_Chap8;
+package chap8;
 
 public class Student {
     String name;
@@ -31,7 +31,7 @@ public class Student {
         return student;
     }
 
-    //매개변수가 정확히 정해져 잇지 앟은 경우에 사용가능 !
+    //매개변수가 정확히 정해져 있지 앟은 경우에 사용가능 !
     //원래는 public void PrintStudents(Student[]] student) { <- 이거였음 !
 
     public void PrintStudents(Student... student) {

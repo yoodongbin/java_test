@@ -1,4 +1,4 @@
-package GotOfJava_Chap8;
+package chap8;
 
 public class ReferenceType {
     public void callPassByValue() {

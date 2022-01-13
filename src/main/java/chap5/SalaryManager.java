@@ -1,4 +1,4 @@
-package GotOfJava_Chap5;
+package chap5;
 
 public class SalaryManager {
     //1월9일

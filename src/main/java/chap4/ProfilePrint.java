@@ -1,4 +1,4 @@
-package GotOfJava_Chap4;
+package chap4;
 //1월9일
 public class ProfilePrint {
     byte age;
