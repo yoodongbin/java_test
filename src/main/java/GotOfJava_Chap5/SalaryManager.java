@@ -13,15 +13,12 @@ public class SalaryManager {
         return monthlySalary;
     }
     public double calculateTax(double monthlySalary) {
-        double calculateTax = monthlySalary*0.125;
-        return calculateTax;
+        return monthlySalary*0.125;
     }
     public double calculateNationalPension(double monthlySalary) {
-        double nationalPension = monthlySalary*0.081;
-        return nationalPension;
+        return monthlySalary*0.081;
     }
     public double calculateHealthInsurance(double monthlySalary) {
-        double healthInsurance = monthlySalary*0.135;
-        return healthInsurance;
+        return monthlySalary*0.135;
     }
 }
