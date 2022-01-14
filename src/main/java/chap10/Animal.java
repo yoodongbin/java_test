@@ -7,10 +7,16 @@ public class Animal {
     int iq;
     boolean hasWing;
 
+    //기본 생성자
+    public Animal() {
+    }
+
+    //움직임
     public void move () {
 
     }
 
+    //
     public void eatFood () {
 
     }
