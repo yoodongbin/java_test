@@ -10,31 +10,45 @@ package InheritanceHW003;
  */
 public class NoteBook {
 
-    //메모리랑
-    int memory;
-    //ssd
-    int ssd;
-    //배터리양
-    int battery;
+    private int memory; //메모리랑
+    private int ssd; //ssd
+    private int battery; //배터리양
 
-    //배터리
-    public int getBattery() {
-        return battery;
+    public NoteBook() {
     }
 
-    //충전함
+    public NoteBook(int battery) {
+        this.battery = battery;
+    }
+
+    public NoteBook(int memory, int ssd, int battery) {
+        this.memory = memory;
+        this.ssd = ssd;
+        this.battery = battery;
+    }
+
+    /**
+     * 노트북을 충전 합니다.
+     */
     public void chargeOn() {
         System.out.println("노트북이 충전중입니다. ");
     }
-    //충전 안 함
+
+    /**
+     * 노트북 충전이 완료 되었습니다.
+     */
     public void chargeOff() {
         System.out.println("노트북이 충전이 완료됐습니다. ");
     }
 
-    //절전모드
+    /**
+     * 절전모드
+     */
     public void lowMode() {
         System.out.println("노트북이 절전모드입니다. ");
     }
 
-
+    public int getBattery() {
+        return battery;
+    }
 }
