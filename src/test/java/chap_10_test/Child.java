@@ -9,8 +9,8 @@ public class Child extends Parent{
         System.out.println("child-printAge() - 18months");
     }
 
-    public void printName() {
-        System.out.println("child-printName()");
+    public void printName(String name) {
+        System.out.println("child-printName()"+name);
     }
 
     public Child(String name) {
