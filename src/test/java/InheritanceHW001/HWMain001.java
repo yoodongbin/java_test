@@ -8,6 +8,8 @@ public class HWMain001 {
         person.sex = "여자";
         genderDivision(person.sex);
 
+        Man man = new Man();
+        man.isLongHair = false;
     }
 
     public static void genderDivision(String sex) {

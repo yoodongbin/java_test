@@ -10,21 +10,15 @@ public class Person {
 
     //기본 생성자
     public Person() {
-
     }
 
     public Person(boolean isLongHair) {
         this.isLongHair = isLongHair;
     }
 
-    //걸음
-    public void walk () {
-
-    }
 
     //대화
     public void talk () {
-
     }
 
 }

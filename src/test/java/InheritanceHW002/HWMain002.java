@@ -13,6 +13,7 @@ public class HWMain002 {
         whisky.getABV = 15.1;
         alcohol.mixedAlcohol(rum.getABV,whisky.getABV);
 
+        rum.mixedAlcohol(rum.getABV,whisky.getABV);
+        whisky.mixedAlcohol(rum.getABV,whisky.getABV);
     }
-
 }
