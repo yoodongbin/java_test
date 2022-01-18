@@ -7,7 +7,13 @@ public class Dog extends Animal{
     }
 
     public void printEat() {
-        System.out.println("dog-child");
+
+        System.out.println("dog<-gum yom yom");
     }
 
+    @Override
+    public void move() {
+        System.out.println("폴짝 폴짝");
+        super.move();
+    }
 }
