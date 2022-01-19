@@ -7,10 +7,14 @@ public class Cafe extends Reservation{
     public Cafe() {
     }
 
-    public void howLongToWait(int guest) {
+    public Cafe(int guest) {
+        super(guest);
+    }
+
+    public void howLongToWait() {
         //예상 웨이팅 시간 : 카페는 손님수 * 10분
         waitingTime = guest*10;
-        super.howLongToWait(guest);
+        super.howLongToWait();
         System.out.println("예상 웨이팅 시간은 약"+waitingTime+"분 입니다.");
     }
 

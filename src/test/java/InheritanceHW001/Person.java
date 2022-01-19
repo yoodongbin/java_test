@@ -1,9 +1,5 @@
 package InheritanceHW001;
-/*
-    시대착오적이지만..
-    남자는 머리가 짧다
-    여자는 길다로 가야겠어요 ㅜㅜ
- */
+
 public class Person {
     String sex;
     boolean isLongHair;
@@ -12,13 +8,9 @@ public class Person {
     public Person() {
     }
 
-    public Person(boolean isLongHair) {
+    public Person(String sex, boolean isLongHair) {
+        this.sex = sex;
         this.isLongHair = isLongHair;
+        System.out.println("성별 : "+sex+" / 긴머리 유무 : "+isLongHair);
     }
-
-
-    //대화
-    public void talk () {
-    }
-
 }

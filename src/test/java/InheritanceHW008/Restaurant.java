@@ -7,11 +7,15 @@ public class Restaurant extends Reservation{
     public Restaurant() {
     }
 
+    public Restaurant(int guest) {
+        super(guest);
+    }
+
     @Override
-    public void howLongToWait(int guest) {
+    public void howLongToWait() {
         //예상 웨이팅 시간 : 식당은 손님수 * 30분
         waitingTime = guest*30;
-        super.howLongToWait(guest);
+        super.howLongToWait();
         System.out.println("예상 웨이팅 시간은 약"+waitingTime+"분 입니다.");
     }
 

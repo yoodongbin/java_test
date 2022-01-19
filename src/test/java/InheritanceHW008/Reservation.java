@@ -7,18 +7,21 @@ public class Reservation {
     int guest;
     int waiting;
 
-    public int getGuest() {
-        return guest;
+    public Reservation() {
     }
 
-    public void setGuest(int guest) {
+    public Reservation(int guest) {
         this.guest = guest;
+    }
+
+    public int getGuest() {
+        return guest;
     }
 
     public void confirmReservation() {
         System.out.println("예약이 완료 됐습니다.");
     }
 
-    protected void howLongToWait(int guest) {
+    protected void howLongToWait() {
     }
 }

@@ -1,6 +1,8 @@
 package stream;
 
 public class Car {
+
+    //변수 선언
     private final Integer id;
     private final String make;
     private final String model;
@@ -8,6 +10,7 @@ public class Car {
     private final Integer year;
     private final Double price;
 
+    //다 받는 생성자 생성
     public Car(Integer id, String make, String model, String color, Integer year, Double price) {
         this.id = id;
         this.make = make;
@@ -18,7 +21,9 @@ public class Car {
     }
 
 
+    //getter ! 생성
     public Integer getId() {
+        System.out.println(id);
         return id;
     }
 

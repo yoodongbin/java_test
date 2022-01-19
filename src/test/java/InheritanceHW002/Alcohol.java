@@ -13,24 +13,17 @@ public class Alcohol {
 
     }
 
-    public Alcohol(String type) {
-        this.type = type;
-    }
-
-    public double getGetABV() {
-        System.out.println("현재 도수는 : "+getABV);
-        return getABV;
-    }
-
     public Alcohol(String type, double getABV) {
         this.type = type;
         this.getABV = getABV;
     }
 
-    //
+    public void getGetABV() {
+        System.out.println("현재 도수는 : "+getABV);
+    }
+
     public void mixedAlcohol (double setABV1, double setABV2) {
         this.getABV = setABV1 + setABV2;
         System.out.println("섞은 술의 도수는 " +this.getABV);
     }
-
 }

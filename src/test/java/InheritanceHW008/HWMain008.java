@@ -6,18 +6,16 @@ public class HWMain008 {
         int guestOfCafe;
         int guestOfRest;
 
-        Cafe cafe = new Cafe();
+        Cafe cafe = new Cafe(8);
         cafe.confirmReservation();
-        cafe.setGuest(8);
-        guestOfCafe = cafe.getGuest();
-        cafe.howLongToWait(guestOfCafe);
+        cafe.getGuest();
+        cafe.howLongToWait();
 
         System.out.println("-----------------------------------");
 
-        Restaurant rant = new Restaurant();
+        Restaurant rant = new Restaurant(5);
         rant.confirmReservation();
-        rant.setGuest(5);
-        guestOfRest = rant.getGuest();
-        rant.howLongToWait(guestOfRest);
+        rant.getGuest();
+        rant.howLongToWait();
     }
 }

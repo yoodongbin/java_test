@@ -4,19 +4,14 @@ package InheritanceHW007;
     환승을 위한 부모 클래스 !!!!!!!!!
  */
 public class Transfer {
-    int fare = 1250;
+    int fare;
+    String type;
 
-    public int getFare() {
-        return fare;
+    public Transfer() {
     }
 
-    public void setFare(int fare) {
+    public Transfer(int fare) {
         this.fare = fare;
+        System.out.println("기본 운임 요금은 "+fare);
     }
-
-    public String changeSomething(String type) {
-//        System.out.println(type+"으로 환승");
-        return type;
-    }
-
 }

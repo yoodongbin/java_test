@@ -5,13 +5,26 @@ public class Car {
         차 상속 예시
      */
     int speed;
+    int kmeter;
 
-    public void speedUp(int speed) {
+    public Car() {
+    }
+
+    public Car(int speed, int kmeter) {
+        this.speed = speed;
+        this.kmeter = kmeter;
+    }
+
+    public Car(int speed) {
+        this.speed = speed;
+    }
+
+    public void speedUp() {
         this.speed = speed + 5;
         System.out.println("자동차 속도 "+this.speed+"입니다.");
     }
 
-    public void speedDown(int speed) {
+    public void speedDown() {
         this.speed = speed - 5;
         System.out.println("자동차 속도 "+this.speed+"입니다.");
     }

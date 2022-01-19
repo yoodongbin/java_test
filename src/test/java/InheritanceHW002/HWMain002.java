@@ -6,14 +6,9 @@ public class HWMain002 {
         System.out.println("칵테일 만들기");
 
         Alcohol alcohol = new Alcohol();
-        Rum rum = new Rum();
-        Whisky whisky = new Whisky();
+        Rum rum = new Rum("rum", 12.5);
+        Whisky whisky = new Whisky("whisky", 8.1);
 
-        rum.getABV = 12.6;
-        whisky.getABV = 15.1;
         alcohol.mixedAlcohol(rum.getABV,whisky.getABV);
-
-        rum.mixedAlcohol(rum.getABV,whisky.getABV);
-        whisky.mixedAlcohol(rum.getABV,whisky.getABV);
     }
 }
