@@ -40,6 +40,7 @@ class Animal{
 }
 
 class Cat extends Animal{
+
     public void print(){
         System.out.println("야옹");
     }

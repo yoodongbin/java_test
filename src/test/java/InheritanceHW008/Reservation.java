@@ -5,7 +5,7 @@ package InheritanceHW008;
 public class Reservation {
 
     int guest;
-    int waiting;
+    int waitingTime;
 
     public Reservation() {
     }
@@ -23,5 +23,6 @@ public class Reservation {
     }
 
     protected void howLongToWait() {
+
     }
 }
