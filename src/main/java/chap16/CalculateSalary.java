@@ -10,27 +10,23 @@ public class CalculateSalary {
         long salary = employee.getSalary();
         switch (employee.getType()) {
             case 1:
-                salary = salary - (long)(salary*0.05);
-                employee.setSalary(salary);
+                salary = (long) (salary - (salary*0.05));
                 break;
             case 2:
                 salary = salary + (long)(salary*0.1);
-                employee.setSalary(salary);
                 break;
             case 3:
                 salary = salary + (long)(salary*0.2);
-                employee.setSalary(salary);
                 break;
             case 4:
                 salary = salary + (long)(salary*0.3);
-                employee.setSalary(salary);
                 break;
             case 5:
                 salary = salary*2;
-                employee.setSalary(salary);
                 break;
         }
-        return  salary;
+        employee.setSalary(salary);
+        return salary;
     }
     public void calculateSalaries() {
         Employee[] employees = new Employee[5];
