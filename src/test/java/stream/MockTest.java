@@ -12,9 +12,7 @@ public class MockTest {
     public void testMockData() throws IOException {
         List<Car> cars = MockData.getCars();
         cars.forEach(car -> {
-            if(car.getColor().equals("Blue")) {
                 System.out.println(car.getModel());
-            }
         });
     }
 
