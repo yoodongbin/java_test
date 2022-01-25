@@ -52,9 +52,10 @@ public class MockTest {
     public void 매이커가_현대이고_금액이10000_이상인_자동차를_구하시오() throws IOException {
         List<Car> cars = MockData.getCars();
         cars.forEach(car -> {
-            if(car.getMake().equals("Hyundai") && car.getPrice() > 10000) {
+            if (car.getMake().equals("Hyundai") && car.getPrice() > 10000) {
                 System.out.println(car);
             }
         });
     }
+
 }
