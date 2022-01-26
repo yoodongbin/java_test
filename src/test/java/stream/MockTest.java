@@ -5,26 +5,32 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MockTest {
     @Test
     @DisplayName("전체 목록 출력하기 이름만..")
     public void testMockData() throws IOException {
         List<Car> cars = MockData.getCars();
-        cars.forEach(car -> {
-                System.out.println(car.getModel());
-        });
+//        cars.forEach(car -> {
+//                System.out.println(car.getModel());
+//        });
+
+        System.out.println(cars.stream().collect(Collectors.toList()));
+
     }
 
     @Test
     @DisplayName("파란색 모델만 구해서 이름만 출력하세요.")
     public void testGetModel() throws IOException{
         List<Car> cars = MockData.getCars();
-        cars.forEach(car -> {
-            if(car.getColor().equals("Blue")) {
-                System.out.println(car.getModel());
-            }
-        });
+//        cars.forEach(car -> {
+//            if(car.getColor().equals("Blue")) {
+//                System.out.println(car.getModel());
+//            }
+//        });
+        System.out.println(
+                cars.stream().filter(car -> car.getColor().equals("Blue")).collect(Collectors.toList()));
     }
 
     @Test
