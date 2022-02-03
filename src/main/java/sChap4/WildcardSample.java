@@ -12,7 +12,7 @@ public class WildcardSample {
 
 
     private void callWildcardMethod() {
-        WildcardGeneric<String> wildcard = new WildcardGeneric<String>();
+        WildcardGeneric<String> wildcard = new WildcardGeneric<>();
         wildcard.setWildcard("Sdfsdfsdf");
         WildcardMethod(wildcard);
     }
@@ -23,10 +23,10 @@ public class WildcardSample {
     }
 
     public void CallBoundedWildcardMethod() {
-        WildcardGeneric<Car> wildcard1 = new WildcardGeneric<Car>();
+        WildcardGeneric<Car> wildcard1 = new WildcardGeneric<>();
         wildcard1.setWildcard(new Car("BMW"));
 
-        WildcardGeneric<Bus> wildcard2 = new WildcardGeneric<Bus>();
+        WildcardGeneric<Bus> wildcard2 = new WildcardGeneric<>();
         wildcard2.setWildcard(new Bus("Busss"));
 
         WildcardMethod(wildcard1);

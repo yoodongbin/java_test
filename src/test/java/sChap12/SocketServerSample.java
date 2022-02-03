@@ -1,5 +1,8 @@
 package sChap12;
 
+import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,6 +14,9 @@ public class SocketServerSample {
         SocketServerSample sample = new SocketServerSample();
         sample.startServer();
     }
+
+    @Test
+    @DisplayName("startServer")
     private void startServer() {
         ServerSocket server = null;
         Socket client = null;
@@ -32,6 +38,7 @@ public class SocketServerSample {
                 System.out.println("Received data : "+receivedData);
                 in.close();
                 stream.close();
+                client.close();
                 if(receivedData.toString().equals("EXIT")) {
                     System.out.println("Stop SocketServer");
                     break;

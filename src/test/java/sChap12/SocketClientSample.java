@@ -1,5 +1,9 @@
 package sChap12;
 
+import com.google.common.annotations.VisibleForTesting;
+import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,14 +17,16 @@ public class SocketClientSample {
         sample.sendSocketSample();
 
     }
-
+    @Test
+    @DisplayName("sendSocketSample")
     private void sendSocketSample() {
         for(int i=0; i<3; i++) {
             sendSocketData("I liked java at "+new Date());
         }
         sendSocketData("EXIT");
     }
-
+    @Test
+    @DisplayName("sendSocketData")
     private void sendSocketData(String s) {
         Socket socket = null;
         try {
